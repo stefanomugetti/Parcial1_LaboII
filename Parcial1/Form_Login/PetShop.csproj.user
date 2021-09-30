@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Productos\Form_Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Productos\Frm_AgregarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Productos\Frm_FacturacionTotal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Administradores\Frm_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Administradores\Frm_AltaAdm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Clientes\Frm_AltaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Empleados\Frm_AltaEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Clientes\Frm_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Empleados\Frm_Empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Frm_Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Frm_MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Administradores\Frm_ModificarAdm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Empleados\Frm_ModificarEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Clientes\Frm_ModificarCli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Productos\Frm_Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

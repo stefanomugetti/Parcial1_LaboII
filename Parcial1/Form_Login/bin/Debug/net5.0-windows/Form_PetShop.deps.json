@@ -1,0 +1,56 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Form_PetShop/1.0.0": {
+        "dependencies": {
+          "Entidades": "1.0.0",
+          "Bunifu.Dataviz.WinForms": "2.2.0"
+        },
+        "runtime": {
+          "Form_PetShop.dll": {}
+        }
+      },
+      "Bunifu.Dataviz.WinForms/2.2.0": {
+        "runtime": {
+          "lib/Bunifu.Dataviz.WinForms.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.0"
+          },
+          "lib/Bunifu.Licensing.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
+      "Entidades/1.0.0": {
+        "runtime": {
+          "Entidades.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Form_PetShop/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Bunifu.Dataviz.WinForms/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qA7K3HNINSz3dpiJIXUCvwzWbxB1ExPl+92dtHvYpnJCUL11PEWKAVkLLzV1vNFItjqMGo1drkCGy2gIMzRgmQ==",
+      "path": "bunifu.dataviz.winforms/2.2.0",
+      "hashPath": "bunifu.dataviz.winforms.2.2.0.nupkg.sha512"
+    },
+    "Entidades/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
