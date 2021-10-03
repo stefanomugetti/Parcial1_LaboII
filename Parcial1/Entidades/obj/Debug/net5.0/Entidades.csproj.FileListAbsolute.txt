@@ -9,3 +9,4 @@ C:\Users\stefa\source\repos\Parcial1\Entidades\obj\Debug\net5.0\Entidades.csproj
 C:\Users\stefa\source\repos\Parcial1\Entidades\obj\Debug\net5.0\Entidades.dll
 C:\Users\stefa\source\repos\Parcial1\Entidades\obj\Debug\net5.0\ref\Entidades.dll
 C:\Users\stefa\source\repos\Parcial1\Entidades\obj\Debug\net5.0\Entidades.pdb
+C:\Users\stefa\source\repos\Parcial1\Entidades\obj\Debug\net5.0\Entidades.csproj.AssemblyReference.cache

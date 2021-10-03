@@ -58,5 +58,10 @@ namespace Entidades
         {
             return listaEmpleados;
         }
+
+        public override string ObtenerDatos()
+        {
+            return base.ObtenerDatos() + $"ID:{this.IdEmpleado}";
+        }
     }
 }

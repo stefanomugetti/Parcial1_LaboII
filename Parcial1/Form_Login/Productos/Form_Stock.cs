@@ -30,7 +30,7 @@ namespace Pet_Shop
                 this.dtgv_Lista.Rows.Clear();
                 foreach (Productos item in lista)
                 {
-                    tipoProducto = TipoProductoString(item);
+                    tipoProducto = Productos.TipoProductoString(item);
                    // this.dtgv_Lista.DataSource = lista;                              no muestra como quiero
                     this.dtgv_Lista.Rows.Add(item.IdProducto.ToString(),item.Nombre,item.Marca,tipoProducto,item.CantidadDisponible.ToString(),item.Precio.ToString()); //Agrego renglon
                 }
@@ -52,7 +52,7 @@ namespace Pet_Shop
                 this.dtgv_Lista.Rows.Clear();
                 foreach (Productos item in lista)
                 {
-                    tipoProducto = TipoProductoString(item);
+                    tipoProducto = Productos.TipoProductoString(item);
                     if(tipoProducto == tipoProductoElegido)
                     {
                         this.dtgv_Lista.Rows.Add(item.IdProducto.ToString(), item.Nombre, item.Marca, tipoProducto, item.CantidadDisponible.ToString(), item.Precio.ToString()); //Agrego renglon
@@ -86,36 +86,6 @@ namespace Pet_Shop
             
             this.CargarLista();
             this.Show();
-        }
-        /// <summary>
-        /// Segun el tipo de producto int, obtiene una cadena
-        /// </summary>
-        /// <param name="item"></param>
-        /// <returns>Cadena con el tipo de producto si es valido, o cadena vacia si no es valido</returns>
-        private string TipoProductoString(Productos item)
-        {
-            string retorno = "";
-            switch (item.TipoProducto)
-            {
-                case 1:
-                    retorno = "Alimentos";
-                    break;
-                case 2:
-                    retorno = "Juguetes";
-                    break;
-                case 3:
-                    retorno = "Camas";
-                    break;
-                case 4:
-                    retorno = "Medicamento";
-                    break;
-                case 5:
-                    retorno = "Limpieza";
-                    break;
-            }                 
-            return retorno;
-        }
-
-        
+        }        
     }
 }

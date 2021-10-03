@@ -62,7 +62,10 @@ namespace Entidades
             return listaAdministradores;
         }
 
-
+        public override string ObtenerDatos()
+        {
+            return base.ObtenerDatos() + $"ID:{this.IdAdmin}";
+        }
 
     }
 }

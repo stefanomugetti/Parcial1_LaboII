@@ -57,5 +57,34 @@ namespace Entidades
         {
             listaProductos.Add(prod);
         }
+
+        /// <summary>
+        /// Segun el tipo de producto int, obtiene una cadena
+        /// </summary>
+        /// <param name="item"></param>
+        /// <returns>Cadena con el tipo de producto si es valido, o cadena vacia si no es valido</returns>
+        public static string TipoProductoString(Productos item)
+        {
+            string retorno = "";
+            switch (item.TipoProducto)
+            {
+                case 1:
+                    retorno = "Alimentos";
+                    break;
+                case 2:
+                    retorno = "Juguetes";
+                    break;
+                case 3:
+                    retorno = "Camas";
+                    break;
+                case 4:
+                    retorno = "Medicamento";
+                    break;
+                case 5:
+                    retorno = "Limpieza";
+                    break;
+            }
+            return retorno;
+        }
     }
 }

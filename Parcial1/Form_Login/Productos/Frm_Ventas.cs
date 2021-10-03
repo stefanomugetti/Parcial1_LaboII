@@ -47,8 +47,7 @@ namespace Pet_Shop
                 this.dtgv_Lista.Rows.Clear();
                 foreach (Productos item in lista)
                 {
-                    //this.dtgv_Lista.SelectedRows[0].DataBoundItem castear a producto y tengo el producto.
-                    tipoProducto = TipoProductoString(item);
+                    tipoProducto = Productos.TipoProductoString(item);
                     this.dtgv_Lista.Rows.Add(item.IdProducto.ToString(), item.Nombre, item.Marca, tipoProducto, item.CantidadDisponible.ToString(), item.Precio.ToString()); //Agrego renglon
                 }
             }
@@ -96,7 +95,7 @@ namespace Pet_Shop
                 {
                     if (cliente.Saldo > (prod.Precio * (int)this.nud_Cantidad.Value))
                     {
-                        Compras compra = new Compras(prod.Nombre, prod.Marca, prod.Precio.ToString(), this.TipoProductoString(prod), (int)this.nud_Cantidad.Value, prod.IdProducto);
+                        Compras compra = new Compras(prod.Nombre, prod.Marca, prod.Precio.ToString(), Productos.TipoProductoString(prod), (int)this.nud_Cantidad.Value, prod.IdProducto);
                         prod.CantidadDisponible = prod.CantidadDisponible - (int)this.nud_Cantidad.Value;
                         cliente.Saldo = cliente.Saldo - (prod.Precio * (int)this.nud_Cantidad.Value);
                         cliente.Carrito.Push(compra);
@@ -144,34 +143,7 @@ namespace Pet_Shop
             }
             return null;
         }
-        /// <summary>
-        /// Segun el tipo de producto int, obtiene una cadena
-        /// </summary>
-        /// <param name="item"></param>
-        /// <returns>Cadena con el tipo de producto si es valido, o cadena vacia si no es valido</returns>
-        private string TipoProductoString(Productos item)
-        {
-            string retorno = "";
-            switch (item.TipoProducto)
-            {
-                case 1:
-                    retorno = "Alimentos";
-                    break;
-                case 2:
-                    retorno = "Juguetes";
-                    break;
-                case 3:
-                    retorno = "Camas";
-                    break;
-                case 4:
-                    retorno = "Medicamento";
-                    break;
-                case 5:
-                    retorno = "Limpieza";
-                    break;
-            }
-            return retorno;
-        }
+
         /// <summary>
         /// Escribe la factura de la compra en un txt
         /// </summary>

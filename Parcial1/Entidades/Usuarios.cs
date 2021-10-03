@@ -32,6 +32,11 @@ namespace Entidades
 
         public abstract bool Agregar();
         public abstract bool Eliminar();
+        
+        public virtual string ObtenerDatos()
+        {
+            return ($"NOMBRE:{this.Nombre}\nAPELLIDO:{this.Apellido}\nDNI:{this.Dni}\nUSUARIO:{this.User}");
+        }
 
         
     }
