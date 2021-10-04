@@ -151,8 +151,9 @@ namespace Pet_Shop
         /// <param name="comprador">datos del cliente</param>
         private void FacturaTxt(Compras compra,Cliente comprador)
         {
+            string path = "C:\\Users\\stefa\\source\\repos\\Parcial1\\Form_Login\\Productos\\Facturas\\factura.txt";
             double.TryParse(compra.PrecioProd, out double precio);
-            TextWriter texto = new StreamWriter("C:\\Users\\stefa\\source\\repos\\Parcial1\\Form_Login\\Productos\\Facturas\\factura.txt");
+            TextWriter texto = new StreamWriter(path);
             texto.WriteLine($"ID PRODUCTO:{compra.IdProd}\t NOMBRE PRODUCTO:{compra.NombreProd}\t MARCA:{compra.MarcaProd}\n");
             texto.WriteLine($"PRECIO:{compra.PrecioProd}\n");
             texto.WriteLine($"CANTIDAD:{compra.Cantidad}\n");

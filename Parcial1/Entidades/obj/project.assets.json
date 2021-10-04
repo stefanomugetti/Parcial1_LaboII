@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\stefa\\source\\repos\\Parcial1\\Entidades\\Entidades.csproj",
+      "projectUniqueName": "C:\\Users\\stefa\\OneDrive\\Escritorio\\PARCIALGIT\\Parcial1\\Entidades\\Entidades.csproj",
       "projectName": "Entidades",
-      "projectPath": "C:\\Users\\stefa\\source\\repos\\Parcial1\\Entidades\\Entidades.csproj",
+      "projectPath": "C:\\Users\\stefa\\OneDrive\\Escritorio\\PARCIALGIT\\Parcial1\\Entidades\\Entidades.csproj",
       "packagesPath": "C:\\Users\\stefa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\stefa\\source\\repos\\Parcial1\\Entidades\\obj\\",
+      "outputPath": "C:\\Users\\stefa\\OneDrive\\Escritorio\\PARCIALGIT\\Parcial1\\Entidades\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\Offline Packages",
